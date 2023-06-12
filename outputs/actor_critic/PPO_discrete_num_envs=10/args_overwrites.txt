@@ -1,0 +1,3 @@
+-run_name=PPO_discrete_num_envs=10
+-max_iterations=300000
+-num_envs=10

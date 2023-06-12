@@ -1,0 +1,7 @@
+-run_name=deepq_num_envs=10
+-max_iterations=600000
+-min_iter=500000
+-agent=deepq
+-min_eps=0.01
+-steps_b_rpl=5
+-num_envs=10

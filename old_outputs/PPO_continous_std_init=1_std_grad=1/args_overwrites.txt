@@ -1,0 +1,5 @@
+-run_name=PPO_continous_std_init=1_std_grad=1
+-max_iterations=600000
+-continous=1
+-std_init=1
+-std_grad=1

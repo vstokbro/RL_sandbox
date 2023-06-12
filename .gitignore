@@ -1,0 +1,6 @@
+/old_putputs
+/.vscode
+/.idea
+/src/__pycache__
+/src/debug
+/shell_scripts

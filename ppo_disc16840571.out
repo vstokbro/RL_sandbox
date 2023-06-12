@@ -1,0 +1,5 @@
+Running script...
+  File "/zhome/db/f/128823/rl/RL_sandbox/src/run.py", line 19
+    if ar
+         ^
+SyntaxError: expected ':'

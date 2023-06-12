@@ -1,0 +1,6 @@
+-run_name=deepq_min_iter=500000_n_batches=20
+-max_iterations=600000
+-min_iter=100000
+-agent=deepq
+-min_eps=0.1
+-steps_b_rpl=5

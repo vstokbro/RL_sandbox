@@ -1,0 +1,6 @@
+-run_name=actor_critic_discrete_num_envs=10_update_horizon=2
+-max_iterations=600000
+-PPO=0
+-n_epochs=1
+-num_envs=10
+-update_horizon=1

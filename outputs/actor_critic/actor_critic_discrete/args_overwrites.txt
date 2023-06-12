@@ -1,0 +1,4 @@
+-run_name=actor_critic
+-max_iterations=600000
+-PPO=0
+-n_epochs=1

@@ -1,4 +1,0 @@
--run_name=deepq_min_iter=300000
--max_iterations=600000
--min_iter=300000
--agent=deepq

@@ -1,5 +1,0 @@
--run_name=deepq_min_iter=500000_min_eps=0.05
--max_iterations=600000
--min_iter=500000
--agent=deepq
--min_eps=0.05

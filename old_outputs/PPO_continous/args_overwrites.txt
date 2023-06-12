@@ -1,2 +1,0 @@
--run_name=PPO_continous
--max_iterations=600000

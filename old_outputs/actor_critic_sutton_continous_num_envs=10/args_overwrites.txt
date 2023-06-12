@@ -1,9 +1,0 @@
--run_name=actor_critic_sutton_continous_num_envs=10
--max_iterations=600000
--eps_PPO=100
--std_init=0.5
--std_grad=1
--batch_size=1
--update_horizon=1
--num_envs=10
--continous=1

@@ -114,7 +114,7 @@ Actor-Critic with PPO
 
 DQN
 
-![Q-learning](outputs/deepq/deepq_num_envs=10/plots/return_p_frame.png)
+![Q-learning](outputs/deepq/deepq_num_envs=10/plots/return_p_iteration.png)
 
 Actor-Critic
 
@@ -122,7 +122,7 @@ Actor-Critic
 
 Actor-Critic with PPO
 
-![Q-learning](outputs/actor_critic/PPO_continous/plots/return_p_frame.png)
+![Q-learning](outputs/actor_critic/PPO_continous/plots/return_p_iteration.png)
 
 ### Continous 10 environments
 

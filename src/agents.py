@@ -104,11 +104,11 @@ class Reinforce(object):
         self.batch_loader.push((reward,state,action))
         if done:
             batch = self.batch_loader.get_all()
-            rewards, states, actions = [arr.squeeze() for arr in batch]
+            rewards, states, actions = batch
             n_steps = len(rewards)
             G = self.calculate_returns(rewards)
-            targets = (G-self.baseline(states).squeeze())
-            gammas = self.gamma**torch.arange(n_steps)
+            targets = (G-self.baseline(states))
+            gammas = (self.gamma**torch.arange(n_steps)).unsqueeze(1)
             self.Pi.fit(targets.detach(),states,actions,gammas=gammas)
             self.baseline.fit(targets)
             self.batch_loader.reset()
@@ -118,7 +118,7 @@ class Reinforce(object):
         returns = torch.zeros(max_steps+1)
         for t in reversed(range(max_steps)):
             returns[t] = rewards[t]+self.gamma*returns[t+1]
-        return returns[:max_steps]
+        return returns[:max_steps].unsqueeze(1)
     
     def return_network(self):
         return self.Pi

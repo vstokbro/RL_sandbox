@@ -1,0 +1,4 @@
+-run_name=reinforce_continous
+-max_iterations=600000
+-agent=reinforce
+-continous=1

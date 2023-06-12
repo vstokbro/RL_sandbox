@@ -71,7 +71,10 @@ The source code of the project.
 
 ## Results
 
+
 Only results for the "LunarLander-v2" are shown.
+
+\****RETURN is the same as REWARD IN THE PLOTS BELOW***
 
 ### Discrete
 
@@ -91,20 +94,44 @@ Actor-Critic with PPO
 
 ![Q-learning](outputs/actor_critic/PPO_discrete/plots/return_p_frame.png)
 
-### Continous 
+### Continous
 
 REINFORCE
 
-![Q-learning](outputs/reinforce/reinforce/plots/return_p_frame.png)
+![Q-learning](outputs/reinforce/reinforce_continous/plots/return_p_frame.png)
 
 Actor-Critic
 
-![Q-learning](outputs/actor_critic/actor_critic_discrete/plots/return_p_frame.png)
+![Q-learning](outputs/actor_critic/actor_critic_continous/plots/return_p_frame.png)
 
 Actor-Critic with PPO
 
-![Q-learning](outputs/actor_critic/actor_critic_discrete/plots/return_p_frame.png)
+![Q-learning](outputs/actor_critic/PPO_continous/plots/return_p_frame.png)
 
 ### Discrete 10 environments
 
+\****Mind that the x-axis is in iterations. For each iteration the agent recieves 10 frames, one for each environment running in parallel.***
+
+DQN
+
+![Q-learning](outputs/deepq/deepq_num_envs=10/plots/return_p_frame.png)
+
+Actor-Critic
+
+![Q-learning](outputs/actor_critic/actor_critic_discrete_num_envs=10/plots/return_p_iteration.png)
+
+Actor-Critic with PPO
+
+![Q-learning](outputs/actor_critic/PPO_continous/plots/return_p_frame.png)
+
 ### Continous 10 environments
+
+\****Mind that the x-axis is in iterations. For each iteration the agent recieves 10 frames, one for each environment running in parallel.***
+
+Actor-Critic
+
+![Q-learning](outputs/actor_critic/actor_critic_continous_num_envs=10/plots/return_p_iteration.png)
+
+Actor-Critic with PPO
+
+![Q-learning](outputs/actor_critic/PPO_continous_num_envs=10/plots/return_p_iteration.png)

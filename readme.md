@@ -8,7 +8,9 @@ The project implements
 - Actor-Critic
 - Actor-Critic with PPO
 
-They have been implemented to run on the [Gymnasium](https://gymnasium.farama.org/) environments "Cartpole-v1" and "LunarLander-v2". DQN, Actor-Critic and PPO can be trained using vectorized environments.
+They have been implemented to run on the [Gymnasium](https://gymnasium.farama.org/) environments "Cartpole-v1" and "LunarLander-v2".
+The agents that uses policy gradient (all but DQN) can run "LunarLander-v2" as a continous environment.
+DQN, Actor-Critic and PPO can be trained using vectorized environments.
 
 ## Installation
 

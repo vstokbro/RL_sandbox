@@ -75,6 +75,8 @@ class PolicyGradient(nn.Module):
         self.optimizer.zero_grad() 
         pi = self.forward(states)
         log_probs = pi.log_prob(actions.squeeze())
+        if log_probs.ndim == 2:
+            gammas, advantages = gammas.unsqueeze(1), advantages.unsqueeze(1)
         loss = (gammas*advantages*log_probs).mean()
         loss.backward()
         self.optimizer.step()

@@ -1,0 +1,3 @@
+-max_iterations=50000
+-agent=reinforce
+-continous=1

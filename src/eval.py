@@ -10,7 +10,7 @@ def evaluate_agent(agent,args):
         state, info = env.reset()
         for step in tqdm(range(1000)):       
             action = agent.pi(state,step)
-            new_state, reward, done, trunc, info = env.step(action)
+            new_state, reward, done, trunc, info = env.step(action.item())
             state = new_state
             if done or trunc:
                 break

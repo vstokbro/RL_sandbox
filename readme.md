@@ -36,7 +36,7 @@ The replicate the experiments generating the results in the results section, go 
 To see how a trained agents plays run:
 
 ```bash
-python src/run.py -eval=1 -eval_path=PATH_TO_EXPERIMENT -agent=AGENT
+python src/run.py -eval=1 -eval_path=PATH_TO_EXPERIMENT
 ```
 
 The model for the final experiments made in this project can be found in the `/outputs` folder.

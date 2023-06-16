@@ -39,7 +39,7 @@ To see how a trained agents plays run:
 python src/run.py -eval=1 -eval_path=PATH_TO_EXPERIMENT
 ```
 
-The model for the final experiments made in this project can be found in the `/outputs` folder.
+The experiments made in this project can be found in the `/outputs` folder.
 Example of PATH_TO_EXPERIMENT could be outputs/deepq/deepq_num_envs=10.
 
 For more details on all arguments that can be passed to `run.py` see `argparser.py`. 

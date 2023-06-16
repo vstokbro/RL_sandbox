@@ -11,17 +11,20 @@ import sys
 
 
 def main(args):
-    env = build_environment(args)
 
-    agent = build_agent(args, env)
-
-    
     if args.eval:
         p = Path(args.eval_path)
-        agent.load_from_state_dict(p)
+        with open(p / 'args.txt') as f:
+            args.__dict__ = json.load(f)
+        args.std_init = 0.01
+        env = build_environment(args)
+        agent = build_agent(args, env)
+        agent.load_from_state_dict(p / 'model' / 'model.ckpt')
         evaluate_agent(agent,args)
 
     else:
+        env = build_environment(args)
+        agent = build_agent(args, env)
         p = make_dirs(args,sys.argv[1:])
         train_agent(
             env,

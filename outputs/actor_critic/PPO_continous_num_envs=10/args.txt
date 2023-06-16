@@ -27,5 +27,6 @@
   "steps_b_rpl": 10,
   "steps_b_upd_trg_net": 50,
   "sum_grad_actions": false,
-  "n_batches": 10
+  "n_batches": 10,
+  "PPO": 1
 }

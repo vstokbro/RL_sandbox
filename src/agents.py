@@ -191,5 +191,5 @@ class DeepQ(object):
         return self.Q
     
     def load_from_state_dict(self,path):
-        self.Pi = torch.load(path)
+        self.Q = torch.load(path)
     

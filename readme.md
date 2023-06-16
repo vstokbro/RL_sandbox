@@ -36,10 +36,11 @@ The replicate the experiments generating the results in the results section, go 
 To see how a trained agents plays run:
 
 ```bash
-python src/run.py -eval=1 -eval_path=PATH_TO_CKPT_FILE -agent=AGENT
+python src/run.py -eval=1 -eval_path=PATH_TO_EXPERIMENT -agent=AGENT
 ```
 
-The model.ckpt files for the final experiments made in this project can be found in the `/outputs` folder.
+The model for the final experiments made in this project can be found in the `/outputs` folder.
+Example of PATH_TO_EXPERIMENT could be outputs/deepq/deepq_num_envs=10.
 
 For more details on all arguments that can be passed to `run.py` see `argparser.py`. 
 
